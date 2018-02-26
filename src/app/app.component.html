@@ -19,3 +19,11 @@
 <button (click)="obtenerservicio()">OBTENER SERVICIO</button>
 <router-outlet></router-outlet>
 <div class="footer">final</div>
+<button (click)="mostrar()">Mostrar</button>
+<button (click)="ocultar()" >Ocultar</button>
+<div *ngIf="bandera" >Holaaa :)</div>
+<ul *ngFor="let item of numeros" >
+  <li>
+    {{ item }}
+  </li>
+</ul>

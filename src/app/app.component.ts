@@ -15,6 +15,8 @@ export class AppComponent {
   public nombre="yimmy";
   public numero =0
 
+  bandera: boolean = false;
+  numeros: number[] = [1,2,3,4];
   constructor(public auth:Servicio1Service){}
 
 calcularfecha() {
@@ -27,6 +29,13 @@ calcularfecha() {
   console.log(this.hoy);
 }
   obtenerservicio(){
-    this.numero=this.auth.getNumero()
+    this.numero=this.auth.getNumero();
+  }
+
+  mostrar(){
+    this.bandera = true;
+  }
+  ocultar(){
+    this.bandera = false;
   }
 }
