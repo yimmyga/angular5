@@ -13,8 +13,11 @@ export class AppComponent {
   public var2= "5";
   public hoy=new Date();
   public nombre="yimmy";
-  public numero =0
+  public numero =0;
 
+
+
+  public varmostrar: boolean = false
   constructor(public auth:Servicio1Service){}
 
 calcularfecha() {
@@ -28,5 +31,10 @@ calcularfecha() {
 }
   obtenerservicio(){
     this.numero=this.auth.getNumero()
+  }
+  mostrarobjeto(){
+
+    this.varmostrar=!this.varmostrar
+
   }
 }
