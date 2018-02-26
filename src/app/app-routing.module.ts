@@ -7,12 +7,15 @@ import { AppComponent } from './app.component';
 import { Componente2Component} from './componente2/componente2.component';
 import { Componente3Component} from './componente3/componente3.component';
 import { Componente4Component} from './componente4/componente4.component';
+import { Componente8Component} from './componente8/componente8.component';
+
 
 
 const routes: Routes = [
     { path: 'componente2' , component: Componente2Component },
     { path: 'componente3' , component: Componente3Component },
     { path: 'componente4' , component: Componente4Component },
+    { path: 'componente8' , component: Componente8Component },
     { path: '', redirectTo: '/', pathMatch: 'full' },
     { path: '**', component: AppComponent},
 
