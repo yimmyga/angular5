@@ -9,6 +9,7 @@ import { Componente3Component } from './componente3/componente3.component';
 import { AppRouterModule } from './app-routing.module';
 import { Componente4Component } from './componente4/componente4.component';
 import { Servicio1Service } from './servicio1.service';
+import { Componente5Component } from './componente5/componente5.component';
 
 
 
@@ -17,7 +18,8 @@ import { Servicio1Service } from './servicio1.service';
     AppComponent,
     Componente2Component,
     Componente3Component,
-    Componente4Component
+    Componente4Component,
+    Componente5Component
   ],
   imports: [
     BrowserModule, FormsModule, BrowserAnimationsModule, AppRouterModule
