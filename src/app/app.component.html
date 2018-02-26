@@ -15,6 +15,7 @@
 
 
 
-<div class="cabecera">Bienvenido</div>
+<div class="cabecera">Bienvenido {{auth.getNumero()}}  {{numero}}</div>
+<button (click)="obtenerservicio()">OBTENER SERVICIO</button>
 <router-outlet></router-outlet>
 <div class="footer">final</div>
