@@ -22,8 +22,8 @@
 <button (click)="mostrar()">Mostrar</button>
 <button (click)="ocultar()" >Ocultar</button>
 <div *ngIf="bandera" >Holaaa :)</div>
-<ul *ngFor="let item of numeros" >
+<ul *ngFor="let item of objetos" >
   <li>
-    {{ item }}
+    {{ item.nombre }} - {{ item.edad }}
   </li>
 </ul>

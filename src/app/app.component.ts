@@ -17,6 +17,16 @@ export class AppComponent {
 
   bandera: boolean = false;
   numeros: number[] = [1,2,3,4];
+  objetos: Object = [
+    {
+      nombre: "Javier",
+      edad: 23
+    },
+    {
+      nombre: "Luis",
+      edad: 24
+    }
+]
   constructor(public auth:Servicio1Service){}
 
 calcularfecha() {
