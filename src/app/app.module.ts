@@ -21,7 +21,7 @@ import { Componente7Component } from './componente7/componente7.component';
     Componente2Component,
     Componente3Component,
     Componente4Component,
-    Componente6Component
+    Componente6Component,
     Componente7Component
   ],
   imports: [
