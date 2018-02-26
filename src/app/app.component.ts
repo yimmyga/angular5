@@ -14,10 +14,9 @@ export class AppComponent {
   public hoy=new Date();
   public nombre="yimmy";
   public numero =0;
-
-
-
   public varmostrar: boolean = false
+  array = ['yimmy','luis','mario','christhian','romauldo'];
+
   constructor(public auth:Servicio1Service){}
 
 calcularfecha() {

@@ -22,5 +22,11 @@
 <button (click) ="mostrarobjeto()" *ngIf="varmostrar">OCULTAR</button>
 
 
+<div *ngIf="varmostrar">
+    <li  *ngFor="let objeto of array" >
+        {{objeto}}
+    </li>
+</div>
+
 <router-outlet></router-outlet>
 <div class="footer">final</div>
