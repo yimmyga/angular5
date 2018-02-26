@@ -8,10 +8,7 @@ import { Componente2Component} from './componente2/componente2.component';
 import { Componente3Component} from './componente3/componente3.component';
 import { Componente4Component} from './componente4/componente4.component';
 import { Componente8Component} from './componente8/componente8.component';
-
-
 import { Componente5Component} from './componente5/componente5.component';
-
 import { Componente6Component} from './componente6/componente6.component';
 
 
@@ -23,7 +20,6 @@ const routes: Routes = [
     { path: 'componente8' , component: Componente8Component },
     { path: 'componente5' , component: Componente5Component },
     { path: 'componente6' , component: Componente6Component },
-
     { path: '', redirectTo: '/', pathMatch: 'full' },
     { path: '**', component: AppComponent},
 

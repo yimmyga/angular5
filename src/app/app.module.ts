@@ -26,13 +26,12 @@ import { Componente7Component } from './componente7/componente7.component';
     Componente2Component,
     Componente3Component,
     Componente4Component,
-
     Componente8Component,
     Componente5Component,
     Componente6Component,
     Componente7Component
 
->>>>>>> a51e0c8116fd83170c2ec3149436f0ba21b05dd8
+
   ],
   imports: [
     BrowserModule, FormsModule, BrowserAnimationsModule, AppRouterModule
