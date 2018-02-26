@@ -17,7 +17,7 @@ export class AppComponent {
   public n1 = 12;
   public n2 = 0;
   public mostrar:boolean = false;
-
+  public array = ['Mario','Root','System','Luz','Zul','Casa','Javier','Manuel','Cristian'];
   constructor(public auth:Servicio1Service) {
   }
 
