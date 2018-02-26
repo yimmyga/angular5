@@ -21,7 +21,6 @@ const routes: Routes = [
     { path: 'componente3' , component: Componente3Component },
     { path: 'componente4' , component: Componente4Component },
     { path: 'componente8' , component: Componente8Component },
-    { path: 'componente4' , component: Componente4Component },
     { path: 'componente5' , component: Componente5Component },
     { path: 'componente6' , component: Componente6Component },
 
