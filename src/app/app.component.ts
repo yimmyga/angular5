@@ -13,7 +13,10 @@ export class AppComponent {
   public var2= "5";
   public hoy=new Date();
   public nombre="yimmy";
-  public numero =0
+  public numero =0;
+
+  public varMostrar=false;
+
 
   constructor(public auth:Servicio1Service){}
 
@@ -27,6 +30,12 @@ calcularfecha() {
   console.log(this.hoy);
 }
   obtenerservicio(){
-    this.numero=this.auth.getNumero()
+    this.numero=this.auth.getNumero();
   }
+
+
+  mostrarObjeto(){
+    this.varMostrar=!this.varMostrar;
+  }
+
 }

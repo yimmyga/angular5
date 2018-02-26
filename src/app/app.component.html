@@ -16,6 +16,11 @@
 
 
 <div class="cabecera">Bienvenido {{auth.getNumero()}}  {{numero}}</div>
-<button (click)="obtenerservicio()">OBTENER SERVICIO</button>
+<!--<button (click)="obtenerservicio()">OBTENER SERVICIO</button>-->
+<button (click)="mostrarObjeto()" *ngIf='varMostrar'>Mostrar Div</button>
+<button (click)="mostrarObjeto()" *ngIf='!varMostrar'>Ocultar Div</button>
+
+<div class="color">MUESTRA DIV {{bandera}}</div>
+
 <router-outlet></router-outlet>
 <div class="footer">final</div>
