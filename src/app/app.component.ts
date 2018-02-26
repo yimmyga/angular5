@@ -16,6 +16,7 @@ export class AppComponent {
   public numero =0;
 
   public varMostrar=false;
+  public arrregloObjetos=["christhian","Javier","Mario","Jymmy"];
 
 
   constructor(public auth:Servicio1Service){}
@@ -24,6 +25,9 @@ calcularfecha() {
   var dia;
   var mes;
   var anio;
+
+
+
   dia = this.hoy.getDate();
   mes = this.hoy.getMonth();
   anio = this.hoy.getFullYear();
