@@ -12,6 +12,9 @@ import { Componente8Component } from './componente8/componente8.component';
 import { Componente5Component } from './componente5/componente5.component';
 import { Componente6Component } from './componente6/componente6.component';
 import { Componente7Component } from './componente7/componente7.component';
+import {HttpClientModule} from '@angular/common/http';
+import {HttpModule} from '@angular/http';
+import {AppConfigService}from './app-config.service'
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,9 +27,17 @@ import { Componente7Component } from './componente7/componente7.component';
     Componente7Component
   ],
   imports: [
-    BrowserModule, FormsModule, BrowserAnimationsModule, AppRouterModule
+    BrowserModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    AppRouterModule,
+      HttpModule
   ],
-  providers: [Servicio1Service],
+  providers:
+
+      [Servicio1Service,
+        AppConfigService],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
