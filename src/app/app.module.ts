@@ -15,8 +15,9 @@ import { Componente5Component } from './componente5/componente5.component';
 
 import { Componente6Component } from './componente6/componente6.component';
 import { Componente7Component } from './componente7/componente7.component';
-
-
+import {HttpClientModule} from '@angular/common/http';
+import {HttpModule} from '@angular/http';
+import {AppConfigService} from './app-config.service';
 
 
 
@@ -31,13 +32,17 @@ import { Componente7Component } from './componente7/componente7.component';
     Componente6Component,
     Componente7Component
 
-
   ],
   imports: [
-    BrowserModule, FormsModule, BrowserAnimationsModule, AppRouterModule
+    BrowserModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    AppRouterModule,
+    HttpClientModule,
+    HttpModule
 
   ],
-  providers: [Servicio1Service],
-  bootstrap: [AppComponent]
+  providers: [Servicio1Service,AppConfigService],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

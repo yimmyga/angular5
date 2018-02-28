@@ -17,6 +17,18 @@
 
 <div class="cabecera">Bienvenido {{auth.getNumero()}}  {{numero}}</div>
 <button (click)="obtenerservicio()">OBTENER SERVICIO</button>
+<div *ngFor="let o of array2">
+    <table border="2">
+    <thead>
+    <tr>
+        <th>{{o.id}}</th>
+        <th>{{o.nombre}}</th>
+        <th>{{o.dni}}</th>
+    </tr>
+    </thead>
+    </table>
+</div>
+<h1 >{{respuestabackend}}</h1>
 <button (click)="mostrarObjeto()" *ngIf="mostrar">Ocultar</button>
 <button (click)="mostrarObjeto()" *ngIf="!mostrar">Mostrar</button>
 <div    *ngIf="mostrar">
@@ -29,3 +41,4 @@
 
 <router-outlet></router-outlet>
 <div class="footer">final</div>
+

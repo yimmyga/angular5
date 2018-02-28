@@ -18,6 +18,8 @@ export class AppComponent {
   public n2 = 0;
   public mostrar:boolean = false;
   public array = ['Mario','Root','System','Luz','Zul','Casa','Javier','Manuel','Cristian'];
+  public respuestabackend:string;
+  public array2:any = [];
   constructor(public auth:Servicio1Service) {
   }
 
@@ -32,7 +34,18 @@ export class AppComponent {
   }
 
   obtenerservicio() {
-    this.numero = this.auth.getNumero()
+    this.numero = this.auth.getNumero();
+    return this.auth.getobjeto().subscribe(
+        result => {
+
+          console.log(result);
+          this.respuestabackend = result._body;
+          this.array2 = JSON.parse(result._body);
+        },
+        error => {
+          console.log(<any>error);
+        }
+    );
   }
 
   mostrarObjeto() {
