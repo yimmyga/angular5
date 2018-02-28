@@ -10,11 +10,9 @@ export class Servicio1Service {
   }
 
   getobjeto():any{
-   var respuesta = this.http.get<any>(this.config.url)+'@GetMapping("listarpersona")';
-   console.log(respuesta);
-   this.getobjeto();
+   return this.http.get(this.config.url+"Index/listarpersona");
 
-  }
+     }
 
 
 }

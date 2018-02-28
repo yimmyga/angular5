@@ -19,17 +19,32 @@ export class AppComponent {
 
   constructor(public auth:Servicio1Service){}
 
+
+  public respuesta:string;
+ respuestaarray:  any =[];
 calcularfecha() {
   var dia;
   var mes;
   var anio;
+
   dia = this.hoy.getDate();
   mes = this.hoy.getMonth();
   anio = this.hoy.getFullYear();
   console.log(this.hoy);
+
 }
   obtenerservicio(){
-    this.numero=this.auth.getNumero()
+    this.numero=this.auth.getNumero();
+    return this.auth.getobjeto().subscribe(
+        result => {
+           console.log(result);
+          this.respuesta= result._body;
+          this.respuestaarray= JSON.parse(result._body);
+        },
+        error => {
+          console.log(<any>error);
+        }
+    );
   }
   mostrarobjeto(){
 

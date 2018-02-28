@@ -20,13 +20,28 @@
 <button (click) ="mostrarobjeto()" *ngIf="!varmostrar">MOSTRAR</button>
 
 <button (click) ="mostrarobjeto()" *ngIf="varmostrar">OCULTAR</button>
+<button (click)="obtenerservicio()">OBTENER SERVICIO</button>
 
 
-<div *ngIf="varmostrar">
-    <li  *ngFor="let objeto of array" >
-        {{objeto}}
-    </li>
+<div >
+
+    <table border="2">
+        <thead>
+            <th>id</th>
+            <th>nombre</th>
+            <th>dni</th>
+        </thead>
+        <tbody>
+        <tr *ngFor="let objeto of respuestaarray">
+            <td>{{ objeto.id }}</td>
+            <td>{{ objeto.nombre }}</td>
+            <td>{{ objeto.dni }}</td>
+
+        </tr>
+        </tbody>
+    </table>
 </div>
 
 <router-outlet></router-outlet>
 <div class="footer">final</div>
+
